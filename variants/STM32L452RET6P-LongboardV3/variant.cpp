@@ -37,7 +37,7 @@
 #define PWM_INSTANCE_TIM16     4
 
 /*
- * Pins descriptions  ---  Changes to Proffieboard v3 marked /*XX##*/
+ * Pins descriptions  ---  Changes from Proffieboard v3 for Longboard v3 marked /*XX##*/
 
 extern const PinDescription g_APinDescription[] =
 {
