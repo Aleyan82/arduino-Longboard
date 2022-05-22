@@ -196,6 +196,32 @@
               "version": "9-2020-q2-update"
             }
           ]
+        },
+        {
+          "name": "Proffieboard Longboard",
+          "architecture": "stm32l4",
+          "version": "3.7",
+          "category": "Contributed",
+          "help": {
+            "online": "https://github.com/Aleyan82/arduino-longboard/issues"
+          },
+          "url": "https://github.com/Aleyan82/arduino-longboard/archive/v3.7.tar.gz",
+          "archiveFileName": "arduino-longboard-v3.7.tar.gz",
+          "checksum": "SHA-256:28d0f6adce8baceb2b07760768cb055f31b64df4839795ed5013085ccb0d9de3",
+          "size": "24720841",
+          "boards": [
+            {"name": "Proffieboard"},
+            {"name": "Proffieboard V2"},
+            {"name": "Proffieboard V3"},
+            {"name": "Longboard V3"},
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "proffieboard",
+              "name": "arm-none-eabi-gcc",
+              "version": "9-2020-q2-update"
+            }
+          ]
         }
 	  
       ],
