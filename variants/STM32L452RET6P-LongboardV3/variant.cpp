@@ -71,7 +71,7 @@ extern const PinDescription g_APinDescription[] =
   // 11, Button 1 (POW), joined with PC5, i2c2 sda
   { GPIOB, GPIO_PIN_MASK(GPIO_PIN_PB14), GPIO_PIN_PB14,            (PIN_ATTR_EXTI),                                 PWM_INSTANCE_NONE,  PWM_CHANNEL_NONE, ADC_INPUT_NONE },
   // 12, Join PB14 (Button 1), adc, wkup
-  { GPIOC, GPIO_PIN_MASK(GPIO_PIN_PC5),  GPIO_PIN_PC5,            (PIN_ATTR_ADC | PIN_ATTR_EXTI | PIN_ATTR_WKUP5),  PWM_INSTANCE_NONE,  PWM_CHANNEL_NONE, ADC_INPUT_14 },
+  /*PC5*/{ GPIOC, GPIO_PIN_MASK(GPIO_PIN_PB0),  GPIO_PIN_PB0,            (PIN_ATTR_ADC | PIN_ATTR_EXTI | PIN_ATTR_WKUP5),  PWM_INSTANCE_NONE,  PWM_CHANNEL_NONE, ADC_INPUT_14 },
   // 13, Button 2 (AUX), joined with PA2, i2c2 scl
   { GPIOB, GPIO_PIN_MASK(GPIO_PIN_PB13), GPIO_PIN_PB13,            (PIN_ATTR_EXTI),                                 PWM_INSTANCE_NONE,  PWM_CHANNEL_NONE, ADC_INPUT_NONE },
   // 14, Joined to PB13 (Button 2), adc, wkup
