@@ -290,6 +290,106 @@ ProffieboardV3-L452RE.menu.opt.o3.build.flags.ldspecs=
 
 ##############################################################
 
+# ST LongboardV3-L452RET6P
+# ---------------------------------------
+LongboardV3-L452RET6P.name=Longboard V3
+LongboardV3-L452RET6P.vid.0=0x1209
+LongboardV3-L452RET6P.pid.0=0x6668
+
+LongboardV3-L452RET6P.upload.tool=stm32l4_dfu
+LongboardV3-L452RET6P.upload.protocol=dfu
+LongboardV3-L452RET6P.upload.maximum_size=507904
+LongboardV3-L452RET6P.upload.use_1200bps_touch=true
+LongboardV3-L452RET6P.upload.wait_for_upload_port=false
+LongboardV3-L452RET6P.upload.native_usb=false
+
+LongboardV3-L452RET6P.build.mcu=cortex-m4
+LongboardV3-L452RET6P.build.f_cpu=80000000L
+LongboardV3-L452RET6P.build.board=LONGBOARD_V3
+LongboardV3-L452RET6P.build.arch=STM32L4
+LongboardV3-L452RET6P.build.core=stm32l4
+LongboardV3-L452RET6P.build.vid=0x1209
+LongboardV3-L452RET6P.build.pid=0x6668
+LongboardV3-L452RET6P.build.did=0xffff
+LongboardV3-L452RET6P.build.usb_manufacturer="ak470.net"
+LongboardV3-L452RET6P.build.usb_product="Longboard"
+LongboardV3-L452RET6P.build.extra_flags=-DSTM32L452xx -DPROFFIEBOARD_VERSION=3 -D__FPU_PRESENT=1 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mabi=aapcs -mslow-flash-data -fsingle-precision-constant -felide-constructors -ffast-math {build.usb_flags} {build.dosfs_flags}
+LongboardV3-L452RET6P.build.ldscript=linker_scripts/STM32L452RE_FLASH.ld
+LongboardV3-L452RET6P.build.openocdscript=openocd_scripts/stm32l452re.cfg
+LongboardV3-L452RET6P.build.variant=STM32L452RET6P-LongboardV3
+LongboardV3-L452RET6P.build.variant_system_libs="-L{runtime.platform.path}/system/STM32L4xx/Lib" "-L{runtime.platform.path}/system/CMSIS/Lib" -lstm32l452 -larm_cortexM4lf_math
+LongboardV3-L452RET6P.build.variant_system_include="-I{runtime.platform.path}/system/CMSIS/Include" "-I{runtime.platform.path}/system/CMSIS/Device/ST/STM32L4xx/Include" "-I{runtime.platform.path}/system/STM32L4xx/Include" 
+
+LongboardV3-L452RET6P.menu.usb.cdc=Serial
+LongboardV3-L452RET6P.menu.usb.cdc.build.usb_type=USB_TYPE_CDC
+LongboardV3-L452RET6P.menu.usb.cdc_msc=Serial + Mass Storage
+LongboardV3-L452RET6P.menu.usb.cdc_msc.build.usb_type=USB_TYPE_CDC_MSC
+LongboardV3-L452RET6P.menu.usb.cdc_hid=Serial + Keyboard + Mouse
+LongboardV3-L452RET6P.menu.usb.cdc_hid.build.usb_type=USB_TYPE_CDC_HID
+LongboardV3-L452RET6P.menu.usb.cdc_msc_hid=Serial + Mass Storage + Keyboard + Mouse
+LongboardV3-L452RET6P.menu.usb.cdc_msc_hid.build.usb_type=USB_TYPE_CDC_MSC_HID
+LongboardV3-L452RET6P.menu.usb.cdc_dap=Serial + CMSIS-DAP
+LongboardV3-L452RET6P.menu.usb.cdc_dap.build.usb_type=USB_TYPE_CDC_DAP
+LongboardV3-L452RET6P.menu.usb.cdc_msc_dap=Serial + Mass Storage + CMSIS-DAP
+LongboardV3-L452RET6P.menu.usb.cdc_msc_dap.build.usb_type=USB_TYPE_CDC_MSC_DAP
+LongboardV3-L452RET6P.menu.usb.cdc_webusb=Serial + WebUSB
+LongboardV3-L452RET6P.menu.usb.cdc_webusb.build.usb_type=USB_TYPE_CDC_WEBUSB
+LongboardV3-L452RET6P.menu.usb.cdc_msc_webusb=Serial + Mass Storage + WebUSB
+LongboardV3-L452RET6P.menu.usb.cdc_msc_webusb.build.usb_type=USB_TYPE_CDC_MSC_WEBUSB
+LongboardV3-L452RET6P.menu.usb.none=No USB
+LongboardV3-L452RET6P.menu.usb.none.build.usb_type=USB_TYPE_NONE
+
+LongboardV3-L452RET6P.menu.dosfs.sdspi=SDCARD (SPI)
+LongboardV3-L452RET6P.menu.dosfs.sdspi.build.dosfs_sdcard=1
+LongboardV3-L452RET6P.menu.dosfs.sdspi.build.dosfs_sflash=0
+LongboardV3-L452RET6P.menu.dosfs.none=None
+LongboardV3-L452RET6P.menu.dosfs.none.build.dosfs_sdcard=0
+LongboardV3-L452RET6P.menu.dosfs.none.build.dosfs_sflash=0
+LongboardV3-L452RET6P.menu.dosfs.sdmmc=SDCARD (SDIO Default Speed)
+LongboardV3-L452RET6P.menu.dosfs.sdmmc.build.dosfs_sdcard=2
+LongboardV3-L452RET6P.menu.dosfs.sdmmc.build.dosfs_sflash=0
+LongboardV3-L452RET6P.menu.dosfs.sdmmc1=SDCARD (SDIO High Speed)
+LongboardV3-L452RET6P.menu.dosfs.sdmmc1.build.dosfs_sdcard=3
+LongboardV3-L452RET6P.menu.dosfs.sdmmc1.build.dosfs_sflash=0
+
+LongboardV3-L452RET6P.menu.speed.80=80 MHz
+LongboardV3-L452RET6P.menu.speed.80.build.f_cpu=80000000L
+LongboardV3-L452RET6P.menu.speed.72=72 MHz
+LongboardV3-L452RET6P.menu.speed.72.build.f_cpu=72000000L
+LongboardV3-L452RET6P.menu.speed.64=64 MHz
+LongboardV3-L452RET6P.menu.speed.64.build.f_cpu=64000000L
+LongboardV3-L452RET6P.menu.speed.48=48 MHz
+LongboardV3-L452RET6P.menu.speed.48.build.f_cpu=48000000L
+LongboardV3-L452RET6P.menu.speed.32=32 MHz
+LongboardV3-L452RET6P.menu.speed.32.build.f_cpu=32000000L
+LongboardV3-L452RET6P.menu.speed.24=24 MHz
+LongboardV3-L452RET6P.menu.speed.24.build.f_cpu=24000000L
+LongboardV3-L452RET6P.menu.speed.16=16 MHz (No USB)
+LongboardV3-L452RET6P.menu.speed.16.build.f_cpu=16000000L
+LongboardV3-L452RET6P.menu.speed.8=8 MHz (No USB)
+LongboardV3-L452RET6P.menu.speed.8.build.f_cpu=8000000L
+LongboardV3-L452RET6P.menu.speed.4=4 MHz (No USB)
+LongboardV3-L452RET6P.menu.speed.4.build.f_cpu=4000000L
+LongboardV3-L452RET6P.menu.speed.2=2 MHz (No USB)
+LongboardV3-L452RET6P.menu.speed.2.build.f_cpu=2000000L
+LongboardV3-L452RET6P.menu.speed.1=1 MHz (No USB)
+LongboardV3-L452RET6P.menu.speed.1.build.f_cpu=1000000L
+
+LongboardV3-L452RET6P.menu.opt.os=Smallest Code
+LongboardV3-L452RET6P.menu.opt.os.build.flags.optimize=-Os
+LongboardV3-L452RET6P.menu.opt.os.build.flags.ldspecs=--specs=nano.specs
+LongboardV3-L452RET6P.menu.opt.o1=Fast
+LongboardV3-L452RET6P.menu.opt.o1.build.flags.optimize=-O1
+LongboardV3-L452RET6P.menu.opt.o1.build.flags.ldspecs=
+LongboardV3-L452RET6P.menu.opt.o2=Faster
+LongboardV3-L452RET6P.menu.opt.o2.build.flags.optimize=-O2
+LongboardV3-L452RET6P.menu.opt.o2.build.flags.ldspecs=
+LongboardV3-L452RET6P.menu.opt.o3=Fastest
+LongboardV3-L452RET6P.menu.opt.o3.build.flags.optimize=-O3
+LongboardV3-L452RET6P.menu.opt.o3.build.flags.ldspecs=
+
+##############################################################
+
 # Tlera Dragonfly
 # ---------------------------------------
 Dragonfly-L476RE.name=Dragonfly-L476RE
