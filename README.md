@@ -1,11 +1,11 @@
 # Arduino Plugin for [Proffieboard](https://fredrik.hubbe.net/lightsaber/v4/)
-
+# Fork specifically made to support Longboard prototypes - WIP
 ## Installing
 
  1. [Download and install the Arduino IDE](https://www.arduino.cc/en/Main/Software) (at least version v1.6.8)
  2. Start the Arduino IDE
  3. Go into Preferences
- 4. Add ```https://profezzorn.github.io/arduino-proffieboard/package_proffieboard_index.json``` as an "Additional Board Manager URL"
+ 4. Add ```https://Aleyan82.github.io/arduino-longboard/package_proffieboard_index.json``` as an "Additional Board Manager URL"
  5. Open the Boards Manager from the Tools -> Board menu and install "Proffieboard Plugin"
  6. Select Proffieboard Tools -> Board menu
 
