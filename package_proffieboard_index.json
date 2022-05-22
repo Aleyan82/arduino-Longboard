@@ -1,12 +1,12 @@
 {
   "packages": [
     {
-      "name": "proffieboard",
-      "maintainer": "Fredrik Hubinette",
-      "websiteURL": "https://github.com/profezzorn/arduino-proffieboard",
-      "email": "hubbe@hubbe.net",
+      "name": "proffieboard longboard",
+      "maintainer": "Alexandre Ariosa",
+      "websiteURL": "https://github.com/Aleyan82/arduino-longboard",
+      "email": "aleyan@sabers.ch",
       "help": {
-        "online": "https://github.com/profezzorn/arduino-proffieboard/issues"
+        "online": "https://github.com/Aleyan82/arduino-longboard/issues"
       },
       "platforms": [
         {
